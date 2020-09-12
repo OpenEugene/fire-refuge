@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   parser: "@typescript-eslint/parser", // Specifies the ESLint parser
   extends: [
@@ -17,7 +19,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  plugins: ["@typescript-eslint", "react"],
+  plugins: ["graphql", "@typescript-eslint", "react"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -29,6 +31,17 @@ module.exports = {
     "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/no-unescaped-entities": "off",
+    // "graphql/template-strings": [
+    //   "error",
+    //   {
+    //     env: "relay",
+    //     tagName: "graphql",
+    //     schemaJsonFilepath: path.resolve(
+    //       __dirname,
+    //       "src/__generated__gatsby-introspection.json"
+    //     ),
+    //   },
+    // ],
   },
   overrides: [
     // Override some TypeScript rules just for .js files
