@@ -12,20 +12,38 @@ module.exports = {
     {
       resolve: `gatsby-source-airtable`,
       options: {
-        apiKey: process.env.AIRTABLE_API_KEY, // may instead specify via env, see below
+        // apiKey: process.env.AIRTABLE_API_KEY,
+        apiKey: "keyMmAL4mVBSORkGc", // read only api, so its cool that its in the repo
         concurrency: 5, // default, see using markdown and attachments for more information
         tables: [
           {
             baseId: `appfnkp3GRXiKn9HR`,
             tableName: `Shelter`,
-            // tableLinks: [`CASE`, `SENSITIVE`, `COLUMN`, `NAMES`], // optional, for deep linking to records across tables.
+            tableLinks: [`County`], // optional, for deep linking to records across tables.
           },
           {
             baseId: `appfnkp3GRXiKn9HR`,
             tableName: `News`,
             // tableLinks: [`CASE`, `SENSITIVE`, `COLUMN`, `NAMES`], // optional, for deep linking to records across tables.
           },
+          {
+            baseId: `appfnkp3GRXiKn9HR`,
+            tableName: `County`,
+            // tableLinks: [`CASE`, `SENSITIVE`, `COLUMN`, `NAMES`], // optional, for deep linking to records across tables.
+          },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typegen`,
+      options: {
+        emitSchema: {
+          "src/__generated__/gatsby-schema.graphql": true,
+          "src/__generated__/gatsby-introspection.json": true,
+        },
+        emitPluginDocuments: {
+          "src/__generated__/gatsby-plugin-documents.graphql": true,
+        },
       },
     },
     "gatsby-plugin-eslint",
