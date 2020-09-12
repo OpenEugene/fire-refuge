@@ -1847,6 +1847,11 @@
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.1.tgz#57637d2a7d1860adb9f9cecbdcc966ce4f551d63"
   integrity sha512-M2BiThcbxMxSKX8W4z5u9jKZn6datnM3+FpEU+eYw0//l31E2xhqi7vTAuJ/Sf0P3yhp66SDJgPu3bRRpvrdQQ==
 
+"@types/arcgis-js-api@^4.16.0":
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/@types/arcgis-js-api/-/arcgis-js-api-4.16.0.tgz#a562e788aaef492ce72de0a98328bb28f6a9a77a"
+  integrity sha512-AAXUeyzF2PxtjKOO/Zqffq/mLpNp/uVaKwqq/n8ayqsqOGtffNDBTrfeUDvaFnrox8oTVFhDIAEObZHJNxwFgA==
+
 "@types/cacheable-request@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@types/cacheable-request/-/cacheable-request-6.0.1.tgz#5d22f3dded1fd3a84c0bbeb5039a7419c2c91976"
@@ -5728,6 +5733,11 @@ esrecurse@^4.1.0:
   integrity sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==
   dependencies:
     estraverse "^5.2.0"
+
+esri-loader@^2.15.0:
+  version "2.15.0"
+  resolved "https://registry.yarnpkg.com/esri-loader/-/esri-loader-2.15.0.tgz#c1b47082075c172b2f564ac933448834c2e8703a"
+  integrity sha512-n5LtVQaLURxhQMK0dc/GSfpnC//h3OhV9YkPAqHc3mO3aYkmJ+t8pVkboI2dDTWGKuCbp8MYmR400cZVkuyHmw==
 
 estraverse@^4.1.1:
   version "4.3.0"
