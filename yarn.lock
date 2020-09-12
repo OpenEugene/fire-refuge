@@ -1847,6 +1847,11 @@
   resolved "https://registry.yarnpkg.com/@turist/time/-/time-0.0.1.tgz#57637d2a7d1860adb9f9cecbdcc966ce4f551d63"
   integrity sha512-M2BiThcbxMxSKX8W4z5u9jKZn6datnM3+FpEU+eYw0//l31E2xhqi7vTAuJ/Sf0P3yhp66SDJgPu3bRRpvrdQQ==
 
+"@types/arcgis-js-api@^4.16.0":
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/@types/arcgis-js-api/-/arcgis-js-api-4.16.0.tgz#a562e788aaef492ce72de0a98328bb28f6a9a77a"
+  integrity sha512-AAXUeyzF2PxtjKOO/Zqffq/mLpNp/uVaKwqq/n8ayqsqOGtffNDBTrfeUDvaFnrox8oTVFhDIAEObZHJNxwFgA==
+
 "@types/cacheable-request@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@types/cacheable-request/-/cacheable-request-6.0.1.tgz#5d22f3dded1fd3a84c0bbeb5039a7419c2c91976"
