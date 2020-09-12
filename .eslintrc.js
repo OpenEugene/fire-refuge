@@ -42,6 +42,7 @@ module.exports = {
     //     ),
     //   },
     // ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
   },
   overrides: [
     // Override some TypeScript rules just for .js files
