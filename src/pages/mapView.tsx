@@ -19,6 +19,9 @@ const WebMapView: React.FC = () => {
         ]) as Promise<MapModules>)
         const map = new ArcGISMap({
           basemap: "topo-vector",
+          portalItem: {
+            id: "0274b41cbcde4525927aee322b005c69",
+          },
         })
 
         // load the map view at the ref's DOM node
