@@ -1,11 +1,12 @@
 import React from "react"
+import Layout from "../components/layout"
 import { Shelters } from "../components/Shelters"
 
 const ResourcesPage: React.FC = () => {
   return (
-    <div>
+    <Layout>
       <Shelters />
-    </div>
+    </Layout>
   )
 }
 

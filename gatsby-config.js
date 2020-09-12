@@ -20,6 +20,7 @@ module.exports = {
             baseId: `appfnkp3GRXiKn9HR`,
             tableName: `Shelter`,
             tableLinks: [`County`], // optional, for deep linking to records across tables.
+            tableView: "Map",
           },
           {
             baseId: `appfnkp3GRXiKn9HR`,
