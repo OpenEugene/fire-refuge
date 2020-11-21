@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-t3OhzcK6\/iOzrobrNdAGIW1j8rTLKwIa\/+Veyx0r65M=",
+      "hash": "sha256-86QJ9f2yF1WK86b9Eiyst1K+CzimoGNWo0dEFf+mwyc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/FireRefuge.Shared.pdb"
     },
     {
-      "hash": "sha256-JHSRScRqraXfZjszk9iat7qQklzZ4UM0hWORHwRbYC0=",
+      "hash": "sha256-\/bMmfZjcqddEyTSE56GQqJY3L3r9Wh3FvQu99UFqY3o=",
       "url": "_framework\/FireRefuge.Client.dll"
     },
     {
-      "hash": "sha256-jMFUY6yI8eExxVAw91KbSQorJegYoBr6L7vS6sDDRE4=",
+      "hash": "sha256-z519\/RjvLYuvx2glFT42MlrZEpO6uGHAj+7YIfA+3ic=",
       "url": "_framework\/FireRefuge.Client.pdb"
     },
     {
@@ -1589,6 +1589,10 @@
       "url": "_framework\/FireRefuge.Shared.dll.gz"
     },
     {
+      "hash": "sha256-f85eEH3UW9XZI\/cJ1Jwnzd4eEXJ2rthRUo3zuOS9t7w=",
+      "url": ".DS_Store"
+    },
+    {
       "hash": "sha256-SO\/fuIIWUxoIu1OABrOpK5n\/AvzxJcg+0H3PT1eutAE=",
       "url": "css\/app.css"
     },
@@ -1599,6 +1603,10 @@
     {
       "hash": "sha256-xMZ0SaSBYZSHVjFdZTAT\/IjRExRIxSriWcJLcA9nkj0=",
       "url": "css\/bootstrap\/bootstrap.min.css.map"
+    },
+    {
+      "hash": "sha256-0ZEVE2cXBvN94Q2y0hEDZxvIx9n6ZhrVDsERdZZ23xc=",
+      "url": "css\/main.min.css"
     },
     {
       "hash": "sha256-+Q44zfEaCMmXduni5Td+IgCbk8sSUQwES2nWs+KKQz0=",
@@ -1645,12 +1653,48 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-VBPuO6gDwZpV+DU62opUOhEV1AxBQoW42R74ffkibpQ=",
+      "hash": "sha256-Ow1usYs69JN5d7RPYa7rH4SFBHbnMx\/wOjOw7RKyznA=",
+      "url": "images\/FireRefuge_Logo.png"
+    },
+    {
+      "hash": "sha256-Bhz66NWVifHUAvrUzIYnIcZK0cxAN4zTWz+2AXOVKNI=",
+      "url": "images\/landing-image.png"
+    },
+    {
+      "hash": "sha256-XdXbO8Uz\/YEXiuV42gF4A5zANnW8hJPLezkWVQNcPKc=",
       "url": "index.html"
     },
     {
       "hash": "sha256-e6RrKBb6SEiZhWH5mL4Ay0Xy9OlK8\/7ZBuFNGci4TGg=",
       "url": "manifest.json"
+    },
+    {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "sass\/abstracts\/_variables.scss"
+    },
+    {
+      "hash": "sha256-1yNkq8sHH8ik9gAOvEObWwee8j8zu3TnkirqA0+nPhA=",
+      "url": "sass\/base\/_reset.scss"
+    },
+    {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "sass\/base\/_typography.scss"
+    },
+    {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "sass\/components\/_buttons.scss"
+    },
+    {
+      "hash": "sha256-TUJ2KiN+sGlQ6dE9q0OBzHBhUcCb18eFZf5Mlgxbw5Y=",
+      "url": "sass\/layout\/_header.scss"
+    },
+    {
+      "hash": "sha256-wvLUDVldiBcDroOoZ0AM6s9heOvqqPr2kl4tHnUvmQY=",
+      "url": "sass\/main.scss"
+    },
+    {
+      "hash": "sha256-cmJJnVe2jSuJ4xV9QPcyqHUSK1tJGoT3XCHbgKkyCmw=",
+      "url": "sass\/pages\/_index.scss"
     },
     {
       "hash": "sha256-g2rPJHw2QR3pA7db7GpC7e\/\/1yhiLLjRfQFf32fUxXA=",
@@ -1661,5 +1705,5 @@
       "url": "FireRefuge.Client.bundle.scp.css"
     }
   ],
-  "version": "YD8YpCf+"
+  "version": "s1ZaiCxu"
 };

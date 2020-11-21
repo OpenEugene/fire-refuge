@@ -1,17 +1,17 @@
-// .main-nav {
-//   background-color: purple;
-//   height: 6rem;
-//   align-items: center;
-//   padding: 0 2rem;
-//   color: #fff;
+.main-nav {
+  background-color: #f4f4f4;
+  min-height: 6rem; 
+}
 
-//   &-li {
-//     margin-right: 2rem;
-//   }
+.navbar-brand {
+  height: 100%;
+  width: 100%;
+}
 
-//   &-a {
-//     color: inherit
+.navbar-logo {
+  max-height: 100%;
+}
 
-    
-//   }
-// }
+.main-nav {
+  background-color: purple;
+}
