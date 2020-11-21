@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-XjfNhNk6SJwN84Sb6y483ros4Mmrdf+3tJgX+j9GrQk=",
+      "hash": "sha256-mxBLPT7I1YsNwwjrBCm+3hbfd\/UV3Gt0Qj+kk\/bpUo4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/FireRefuge.Shared.pdb"
     },
     {
-      "hash": "sha256-E024vapwFxFyTE\/DR5oJiflE1aUqB8dGG73rLOkdJz4=",
+      "hash": "sha256-0XfCWFWAeu383IOvmxVklVcR1CSd4XrTxoB7tdggMqE=",
       "url": "_framework\/FireRefuge.Client.dll"
     },
     {
-      "hash": "sha256-5cMyXix\/T7afq\/HDtwrtIxITibwu+R7lEpRf+vDd558=",
+      "hash": "sha256-dbzJCcH8qkNjMFxTpb5djKbpc0yJd\/Tnycd9HY7QZ8A=",
       "url": "_framework\/FireRefuge.Client.pdb"
     },
     {
@@ -1605,7 +1605,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-0ZEVE2cXBvN94Q2y0hEDZxvIx9n6ZhrVDsERdZZ23xc=",
+      "hash": "sha256-H1A5hGY\/XskRiyuSduTmeKJ1H8SZ9gxt1EiIMTO3Mpk=",
       "url": "css\/main.min.css"
     },
     {
@@ -1685,16 +1685,28 @@
       "url": "sass\/components\/_buttons.scss"
     },
     {
+      "hash": "sha256-Bd74hLm8eM38Cf2b2MVjbrARCaxUbsubFL54543Cvg8=",
+      "url": "sass\/components\/_cards.scss"
+    },
+    {
+      "hash": "sha256-47DEQpj8HBSa+\/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "url": "sass\/components\/_side-form.scss"
+    },
+    {
       "hash": "sha256-TUJ2KiN+sGlQ6dE9q0OBzHBhUcCb18eFZf5Mlgxbw5Y=",
       "url": "sass\/layout\/_header.scss"
     },
     {
-      "hash": "sha256-wvLUDVldiBcDroOoZ0AM6s9heOvqqPr2kl4tHnUvmQY=",
+      "hash": "sha256-D4UPw\/7iCG6VAxeTmkSDCuG7GwtguatJ+JuoN6zJVN8=",
       "url": "sass\/main.scss"
     },
     {
       "hash": "sha256-cmJJnVe2jSuJ4xV9QPcyqHUSK1tJGoT3XCHbgKkyCmw=",
       "url": "sass\/pages\/_index.scss"
+    },
+    {
+      "hash": "sha256-sLg70DtGjUs0DK9fUXUL2RNYb6iVyHimKypV2N75g\/g=",
+      "url": "sass\/pages\/_map.scss"
     },
     {
       "hash": "sha256-g2rPJHw2QR3pA7db7GpC7e\/\/1yhiLLjRfQFf32fUxXA=",
@@ -1705,5 +1717,5 @@
       "url": "FireRefuge.Client.bundle.scp.css"
     }
   ],
-  "version": "33aiIzPa"
+  "version": "PL5R1sdV"
 };
