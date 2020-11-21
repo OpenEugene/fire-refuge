@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-86QJ9f2yF1WK86b9Eiyst1K+CzimoGNWo0dEFf+mwyc=",
+      "hash": "sha256-XjfNhNk6SJwN84Sb6y483ros4Mmrdf+3tJgX+j9GrQk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/FireRefuge.Shared.pdb"
     },
     {
-      "hash": "sha256-\/bMmfZjcqddEyTSE56GQqJY3L3r9Wh3FvQu99UFqY3o=",
+      "hash": "sha256-E024vapwFxFyTE\/DR5oJiflE1aUqB8dGG73rLOkdJz4=",
       "url": "_framework\/FireRefuge.Client.dll"
     },
     {
-      "hash": "sha256-z519\/RjvLYuvx2glFT42MlrZEpO6uGHAj+7YIfA+3ic=",
+      "hash": "sha256-5cMyXix\/T7afq\/HDtwrtIxITibwu+R7lEpRf+vDd558=",
       "url": "_framework\/FireRefuge.Client.pdb"
     },
     {
@@ -1705,5 +1705,5 @@
       "url": "FireRefuge.Client.bundle.scp.css"
     }
   ],
-  "version": "s1ZaiCxu"
+  "version": "33aiIzPa"
 };
