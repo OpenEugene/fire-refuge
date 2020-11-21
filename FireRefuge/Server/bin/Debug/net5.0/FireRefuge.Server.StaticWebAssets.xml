@@ -1,0 +1,5 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/Users/cam/Desktop/fire-refuge/FireRefuge/Client/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/Users/cam/Desktop/fire-refuge/FireRefuge/Client/obj/Debug/net5.0/scopedcss/bundle/" />
+  <ContentRoot BasePath="/" Path="/Users/cam/Desktop/fire-refuge/FireRefuge/Client/wwwroot/" />
+</StaticWebAssets>
