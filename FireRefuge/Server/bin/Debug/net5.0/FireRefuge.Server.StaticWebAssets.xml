@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="/src//Client/bin/Debug/net5.0/wwwroot/" />
+  <ContentRoot BasePath="/" Path="/src//Client/obj/Debug/net5.0/scopedcss/bundle/" />
+  <ContentRoot BasePath="/" Path="/src//Client/wwwroot/" />
+</StaticWebAssets>
