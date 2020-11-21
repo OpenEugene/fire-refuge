@@ -1,7 +1,29 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+<div class="index-content">
+  <header class="mt-2">
+    <h2 class="text-center">Welcome</h2>
+  </header>
 
-Welcome to your new app.
+  <section class="index-content-main">
+    <p class="lead mt-2">We hope you are able to find the resources your need!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam explicabo architecto aliquam modi omnis laboriosam molestiae. Earum quas commodi natus placeat. Natus provident, ducimus minus dolores laudantium atque voluptatibus similique!</p>
+    
+    <img class="index-content-main-img" src="../images/landing-image.png" alt="">
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    <div class="index-content-buttons d-flex justify-content-around">
+      @* resources *@
+      <div class="card">
+        <div class="card-body">
+          <a href="#">Find Resources</a>
+        </div>
+      </div>
+      @* map *@
+      <div class="card">
+        <div class="card-body">
+          <a href="#">View Map</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

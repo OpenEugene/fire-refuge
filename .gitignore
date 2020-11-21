@@ -7,3 +7,7 @@
 /FireRefuge/Server/obj
 /FireRefuge/Shared/obj
 /FireRefuge/Client/obj
+
+.DS_Store
+
+FireRefuge/Client/bin/Debug/net5.0/
