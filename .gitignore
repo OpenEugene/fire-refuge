@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/FireRefuge/.vs/FireRefuge/v16
+/FireRefuge/Server/obj
+/FireRefuge/Shared/obj
+/FireRefuge/Client/obj
