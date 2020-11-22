@@ -28,10 +28,7 @@
           "FireRefuge.Client": "1.0.0",
           "FireRefuge.Shared": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.0",
-<<<<<<< HEAD
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
-=======
->>>>>>> 57e1840fcde2d6e6de58dd3fe5ea128e2a2bea67
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -464,10 +461,7 @@
           "lib/net5.0/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
-<<<<<<< HEAD
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {},
-=======
->>>>>>> 57e1840fcde2d6e6de58dd3fe5ea128e2a2bea67
       "System.IO.Pipelines/5.0.0": {},
       "System.Net.Http.Json/5.0.0": {
         "compile": {
@@ -2369,7 +2363,6 @@
       "path": "microsoft.jsinterop.webassembly/5.0.0",
       "hashPath": "microsoft.jsinterop.webassembly.5.0.0.nupkg.sha512"
     },
-<<<<<<< HEAD
     "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {
       "type": "package",
       "serviceable": true,
@@ -2377,8 +2370,6 @@
       "path": "microsoft.visualstudio.azure.containers.tools.targets/1.10.9",
       "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
     },
-=======
->>>>>>> 57e1840fcde2d6e6de58dd3fe5ea128e2a2bea67
     "System.IO.Pipelines/5.0.0": {
       "type": "package",
       "serviceable": true,
