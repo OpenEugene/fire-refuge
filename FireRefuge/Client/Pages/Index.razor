@@ -1,29 +1,40 @@
 ﻿@page "/"
 
 <div class="index-content">
-  <header class="mt-2">
-    <h2 class="text-center">Welcome</h2>
+  <header class="mt-2 mb-4 text-center">
+    <h2 class="">Welcome</h2>
+    <p class="lead mt-2">We hope you are able to find the resources your need!</p>
   </header>
 
-  <section class="index-content-main">
-    <p class="lead mt-2">We hope you are able to find the resources your need!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam explicabo architecto aliquam modi omnis laboriosam molestiae. Earum quas commodi natus placeat. Natus provident, ducimus minus dolores laudantium atque voluptatibus similique!</p>
-    
-    <img class="index-content-main-img" src="../images/landing-image.png" alt="">
+  <section class="index-content-main my-4">
+    <p>Welcome to Project Fire Refuge, a tool designed to help local governments connect disaster victims to housing resources. The product centers around a 3-tier model that addresses housing needs for everyone from the houseless to those evacuated from their homes.</p>
+    <p>Tier 1 is the suite of full housing solutions available through collaboration with Airbnb and Home Share Oregon.</p> 
+    <p>Tier 2 is the inventory of RV sites established in collaboration with the government, service providers, and property owners. </p>
+    <p>Tier 3 is the network micro shelter sites for tents, huts, and other emergency shelter solutions.</p>
+    <p>The high-tech component connects people who have homes, ADUs, and available land with people seeking shelter. It produces a map with a global view of all available resources and captures specific needs and resources that can be routed to caseworkers. </p>
+    <p>The high-touch component is a programmatic structure integrated into the high-tech component through a simple user-interface. Service providers and volunteers connect hosts and guests with any additional supplies and update the inventory in real-time as new entries are confirmed and as housing matches are made. </p>
 
-    <div class="index-content-buttons d-flex justify-content-around">
+
+
+
+
+
+
+    <div class="index-content-buttons d-flex justify-content-around my-4">
       @* resources *@
-      <div class="card">
+      <div class="card bg-info">
         <div class="card-body">
-          <a href="#">Find Resources</a>
+          <a href="resources" class="text-white">Find Resources</a>
         </div>
       </div>
       @* map *@
-      <div class="card">
+      <div class="card bg-success tex">
         <div class="card-body">
-          <a href="#">View Map</a>
+          <a href="map" class="text-white">View Map</a>
         </div>
       </div>
     </div>
+    
+    <img class="index-content-main-img" src="../images/landing-image.png" alt="">
   </section>
 </div>
