@@ -1,13 +1,111 @@
 @page "/map"
 
 <div class="d-flex">
-  <div class="side-form">
-    Embed form here.. <br> <a href="https://arcg.is/Pf9jX0">Link to form</a>
-    @* Web form ID: 2479d72abc2349b6827457314aded6a3 *@
-    @* Client ID: UovfyeQpmz7QeQz4 *@
-    @* Client Secret: 6a14282ac7a04db5b2beb9d12b8e0d4b *@
-    @* Temporary Token: RVuhfXmX7Ojb1EEMCqku0EeAc-xNqSM-nLmgsSWBUWd0ZeiyS9O0QiAJl-3OrfxoR-eYDo4rC_3HdxJKcjJTbxV7ZUm3odoRGPU_h37HhkgvPh-y_l-FDPJJRiIvkjs-6ADnVYJCD6-DEPQKyTAmGg.. *@
-  </div>
+  <form class="side-form">
+    @* First Name *@
+    <div class="form-group">
+      <label for="firstName">Please enter your first name</label>
+      <input type="text" class="form-control" id="firstName" placeholder="First Name">
+    </div>
+    
+    @* Last Name *@
+    <div class="form-group">
+      <label for="lastName">Please enter your last name</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+    </div>
+
+    @* Last Name *@
+    <div class="form-group">
+      <label for="lastName">Please enter your last name</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+    </div>
+
+    @* Phone Number *@
+    <div class="form-group">
+      <label for="phone">Please enter your phone number</label>
+      <input type="text" class="form-control" id="phone" placeholder=" Ex: 555-555-5555">
+    </div>
+
+    @* Email *@
+    <div class="form-group">
+      <label for="email">Please enter your email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ex: example@example.com">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+
+    @* Address *@
+    <div class="form-group">
+      <label for="address">Please enter your physical address</label>
+      <input type="text" class="form-control" id="address" placeholder="Ex: 3rd Avenue, Eugene, OR, 97401">
+      <small id="addressHelp"  aria-describedby="addressHelp" class="form-text text-muted">If you a looking for housing, please enter the address that was impacted by the wildfires.</small>
+    </div>
+
+    @* Rent / Own *@
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
+      <label class="form-check-label" for="ownHome">
+        I own my home
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="rentOrOwn" id="rentHome" value="I rent my home">
+      <label class="form-check-label" for="rentHome">
+        I rent my home
+      </label>
+    </div>
+
+
+    @* Need housing / Have a place for guests *@
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
+      <label class="form-check-label" for="needHelp">
+        I need houding
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
+      <label class="form-check-label" for="haveHousing">
+        I have a place for guests
+      </label>
+    </div>
+
+    @* Housing type *@
+      <div class="form-group">
+        <label for="housingType">What type of housing?</label>
+        <select class="form-control" id="housingType">
+          <option>Apartment</option>
+          <option>House</option>
+          <option>Condo</option>
+          <option>Accessory Dwelling Unit</option>
+        </select>
+      </div>
+
+      @* Number of rooms *@
+      <div class="form-group">
+        <label for="numberOfRooms">Please enter number of available rooms</label>
+        <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
+      </div>
+
+    @* Need housing / Have a place for guests *@
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
+      <label class="form-check-label" for="needHelp">
+        I need houding
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
+      <label class="form-check-label" for="haveHousing">
+        I have a place for guests
+      </label>
+    </div>
+
+
+
+    @* Submit *@
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
 
   <div class="main-map d-flex justify-content-center align-items-center">
     <iframe width='100%' height='800px' src='https://uo-online.maps.arcgis.com/apps/View/index.html?appid=4fc8ab229fe249d3a169c70793d86258&fbclid=IwAR27mpKRbJVmg11JDYzkS5ozNgt3snGbJvhejgzZtBLv65o-g3bWUl2st4M&extent=-123.2204,43.9826,-122.8908,44.0983' frameborder='0' scrolling='no'></iframe>
