@@ -360,3 +360,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+FireRefuge/Client/bin/Debug/net5.0/wwwroot/_framework/
+
+FireRefuge/Client/bin/Debug/net5.0/
+
+FireRefuge/Server/bin/Debug/net5.0/
+
+FireRefuge/Shared/bin/Debug/net5.0/
