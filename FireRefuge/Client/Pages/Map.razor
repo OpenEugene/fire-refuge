@@ -1,7 +1,7 @@
 @page "/map"
 
 <div class="d-flex">
-  <form class="side-form">
+  <form class="side-form bg-light p-4">
     @* First Name *@
     <div class="form-group">
       <label for="firstName">First Name:</label>
@@ -35,38 +35,42 @@
     </div>
 
     @* Rent / Own *@
-    <div class="form-check">
-      <label>
+    <div class="my-4">
+      <p>
         Do you rent or own?
-      </label>
-      <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
-      <label class="form-check-label" for="ownHome">
-        I own my home
-      </label>
+      </p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
+        <label class="form-check-label" for="ownHome">
+          I own my home
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="rentOrOwn" id="rentHome" value="I rent my home">
+        <label class="form-check-label" for="rentHome">
+          I rent my home
+        </label>
+      </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="rentOrOwn" id="rentHome" value="I rent my home">
-      <label class="form-check-label" for="rentHome">
-        I rent my home
-      </label>
-    </div>
+    
 
-
-    @* Need housing / Have a place for guests *@
-    <div class="form-check">
-      <label>
+    <div class="mb-4">
+      @* Need housing / Have a place for guests *@
+      <p>
         Plese tell us if you <b>need</b> housing, or if you <b>have</b> a place for guests
-      </label>
-      <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
-      <label class="form-check-label" for="needHelp">
-        I need houding
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
-      <label class="form-check-label" for="haveHousing">
-        I have a place for guests
-      </label>
+      </p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
+        <label class="form-check-label" for="needHelp">
+          I need houding
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
+        <label class="form-check-label" for="haveHousing">
+          I have a place for guests
+        </label>
+      </div>
     </div>
 
     @* Housing type *@
@@ -77,6 +81,8 @@
         <option>House</option>
         <option>Condo</option>
         <option>Accessory Dwelling Unit</option>
+        <option>RV</option>
+        <option>Mobile Home</option>
       </select>
     </div>
 
@@ -86,21 +92,23 @@
       <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
     </div>
 
-    @* Detatched space *@
-    <div class="form-check">
-      <label>
+    <div class="my-4">
+      @* Detatched space *@
+      <p>
         Please indicate whether the space is detached from the home
-      </label>
-      <input class="form-check-input" type="radio" name="isDetatched" id="isDetatched" value="is detatched" checked>
-      <label class="form-check-label" for="isDetatched">
-        Yes
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="isDetatched" id="notDetatched" value="is not detatched">
-      <label class="form-check-label" for="notDetatched">
-        No
-      </label>
+      </p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="isDetatched" id="isDetatched" value="is detatched" checked>
+        <label class="form-check-label" for="isDetatched">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="isDetatched" id="notDetatched" value="is not detatched">
+        <label class="form-check-label" for="notDetatched">
+          No
+        </label>
+      </div>
     </div>
 
     @* Number of adults *@
@@ -151,36 +159,31 @@
       <input type="number" class="form-control" id="amountOfAdditionalTime" placeholder="Ex: 4">
     </div>
 
-    @* Interested in incentives *@
-    <div class="form-check">
-      <label>
+    <div class="my-4">
+      @* Interested in incentives *@
+      <p>
         Are you interesed in learning more about financial incentives for opening your home to evacuees?
-      </label>
-      <input class="form-check-input" type="radio" name="isInsentivised" id="isInsentivised" value="is insentivised" checked>
-      <label class="form-check-label" for="isDetatched">
-        Yes
-      </label>
+      </p>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="isInsentivised" id="isInsentivised" value="is insentivised" checked>
+        <label class="form-check-label" for="isDetatched">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="isInsentivised" id="notInsentivised" value="is not insentivised">
+        <label class="form-check-label" for="notInsentivised">
+          No
+        </label>
+      </div>
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="isInsentivised" id="notInsentivised" value="is not insentivised">
-      <label class="form-check-label" for="notInsentivised">
-        No
-      </label>
-    </div>
-
-
-
-
-
-
-
 
     @* Submit *@
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
   </form>
 
-
+  @* MAP SIDE *@
   <div class="main-map d-flex justify-content-center align-items-center">
-    <iframe width='100%' height='800px' src='https://uo-online.maps.arcgis.com/apps/View/index.html?appid=4fc8ab229fe249d3a169c70793d86258&fbclid=IwAR27mpKRbJVmg11JDYzkS5ozNgt3snGbJvhejgzZtBLv65o-g3bWUl2st4M&extent=-123.2204,43.9826,-122.8908,44.0983' frameborder='0' scrolling='no'></iframe>
+    <iframe class="sticky" width='100%' height='800px' src='https://uo-online.maps.arcgis.com/apps/View/index.html?appid=4fc8ab229fe249d3a169c70793d86258&fbclid=IwAR27mpKRbJVmg11JDYzkS5ozNgt3snGbJvhejgzZtBLv65o-g3bWUl2st4M&extent=-123.2204,43.9826,-122.8908,44.0983' frameborder='0' scrolling='no'></iframe>
   </div>
 </div>

@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-ZgutXFsEmR21eeOKRhf7FcR+9AENU1mRQnioc2Ee0kI=",
+      "hash": "sha256-vEXP6CeWCPoEgDySrsYIbdSYK3D+8fYdKcBgJCdB++I=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -793,11 +793,11 @@
       "url": "_framework\/FireRefuge.Shared.pdb"
     },
     {
-      "hash": "sha256-1enjl9gfEA1G8W0AIBYpuT0Op82Te02S8R5+szFs3EA=",
+      "hash": "sha256-dOV0wtxAbQ0qm7q88HO\/JgZCFsvM2pE73KIOd2Ntv+Q=",
       "url": "_framework\/FireRefuge.Client.dll"
     },
     {
-      "hash": "sha256-jax37infepYZLsJH7Cgp8WnWV2jNPDpxziEy1agyOMw=",
+      "hash": "sha256-ZZ3b3Q5y7UuFvhKyXONqtHOvie3M0VqP\/2UIdeZ7mT4=",
       "url": "_framework\/FireRefuge.Client.pdb"
     },
     {
@@ -1705,7 +1705,7 @@
       "url": "sass\/pages\/_index.scss"
     },
     {
-      "hash": "sha256-sLg70DtGjUs0DK9fUXUL2RNYb6iVyHimKypV2N75g\/g=",
+      "hash": "sha256-Bu1b3sRzSSUH3ASQObfTG0\/Mw\/9NEw6eWqCh2FclmmU=",
       "url": "sass\/pages\/_map.scss"
     },
     {
@@ -1717,5 +1717,5 @@
       "url": "FireRefuge.Client.bundle.scp.css"
     }
   ],
-  "version": "P5bub63V"
+  "version": "XCckml7M"
 };
