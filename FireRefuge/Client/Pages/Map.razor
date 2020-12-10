@@ -4,44 +4,41 @@
   <form class="side-form">
     @* First Name *@
     <div class="form-group">
-      <label for="firstName">Please enter your first name</label>
-      <input type="text" class="form-control" id="firstName" placeholder="First Name">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" id="firstName" placeholder="Please enter your first name">
     </div>
     
     @* Last Name *@
     <div class="form-group">
-      <label for="lastName">Please enter your last name</label>
-      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-    </div>
-
-    @* Last Name *@
-    <div class="form-group">
-      <label for="lastName">Please enter your last name</label>
-      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Please enter your last name">
     </div>
 
     @* Phone Number *@
     <div class="form-group">
-      <label for="phone">Please enter your phone number</label>
+      <label for="phone">Phone Number:</label>
       <input type="text" class="form-control" id="phone" placeholder=" Ex: 555-555-5555">
     </div>
 
     @* Email *@
     <div class="form-group">
-      <label for="email">Please enter your email address</label>
+      <label for="email">Email Address:</label>
       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ex: example@example.com">
       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
 
     @* Address *@
     <div class="form-group">
-      <label for="address">Please enter your physical address</label>
+      <label for="address">Physical Address:</label>
       <input type="text" class="form-control" id="address" placeholder="Ex: 3rd Avenue, Eugene, OR, 97401">
       <small id="addressHelp"  aria-describedby="addressHelp" class="form-text text-muted">If you a looking for housing, please enter the address that was impacted by the wildfires.</small>
     </div>
 
     @* Rent / Own *@
     <div class="form-check">
+      <label>
+        Do you rent or own?
+      </label>
       <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
       <label class="form-check-label" for="ownHome">
         I own my home
@@ -57,6 +54,9 @@
 
     @* Need housing / Have a place for guests *@
     <div class="form-check">
+      <label>
+        Plese tell us if you <b>need</b> housing, or if you <b>have</b> a place for guests
+      </label>
       <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
       <label class="form-check-label" for="needHelp">
         I need houding
@@ -70,35 +70,108 @@
     </div>
 
     @* Housing type *@
-      <div class="form-group">
-        <label for="housingType">What type of housing?</label>
-        <select class="form-control" id="housingType">
-          <option>Apartment</option>
-          <option>House</option>
-          <option>Condo</option>
-          <option>Accessory Dwelling Unit</option>
-        </select>
-      </div>
+    <div class="form-group">
+      <label for="housingType">What type of housing?</label>
+      <select class="form-control" id="housingType">
+        <option>Apartment</option>
+        <option>House</option>
+        <option>Condo</option>
+        <option>Accessory Dwelling Unit</option>
+      </select>
+    </div>
 
-      @* Number of rooms *@
-      <div class="form-group">
-        <label for="numberOfRooms">Please enter number of available rooms</label>
-        <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
-      </div>
+    @* Number of rooms *@
+    <div class="form-group">
+      <label for="numberOfRooms">Please enter number of available rooms</label>
+      <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
+    </div>
 
-    @* Need housing / Have a place for guests *@
+    @* Detatched space *@
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
-      <label class="form-check-label" for="needHelp">
-        I need houding
+      <label>
+        Please indicate whether the space is detached from the home
+      </label>
+      <input class="form-check-input" type="radio" name="isDetatched" id="isDetatched" value="is detatched" checked>
+      <label class="form-check-label" for="isDetatched">
+        Yes
       </label>
     </div>
     <div class="form-check">
-      <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
-      <label class="form-check-label" for="haveHousing">
-        I have a place for guests
+      <input class="form-check-input" type="radio" name="isDetatched" id="notDetatched" value="is not detatched">
+      <label class="form-check-label" for="notDetatched">
+        No
       </label>
     </div>
+
+    @* Number of adults *@
+    <div class="form-group">
+      <label for="numberOfAdults">Please enter number of adults accepted</label>
+      <input type="number" class="form-control" id="numberOfAdults" placeholder="Ex: 2">
+    </div>
+
+    @* Number of children *@
+    <div class="form-group">
+      <label for="numberOfChildren">Please enter number of children accepted</label>
+      <input type="number" class="form-control" id="numberOfChildren" placeholder="Ex: 3">
+    </div>
+
+    @* Number of pets *@
+    <div class="form-group">
+      <label for="numberOfPets">Please enter number of pets accepted</label>
+      <input type="number" class="form-control" id="numberOfPets" placeholder="Ex: 2">
+    </div>
+
+    @* Number of dogs *@
+    <div class="form-group">
+      <label for="numberOfDogs">Please enter number of dogs accepted</label>
+      <input type="number" class="form-control" id="numberOfDogs" placeholder="Ex: 2">
+    </div>
+
+    @* Number of cats *@
+    <div class="form-group">
+      <label for="numberOfCats">Please enter number of cats accepted</label>
+      <input type="number" class="form-control" id="numberOfCats" placeholder="Ex: 2">
+    </div>
+
+    @* Number of other pets *@
+    <div class="form-group">
+      <label for="numberOfOtherPets">Please enter number of other pets accepted</label>
+      <input type="number" class="form-control" id="numberOfOtherPets" placeholder="Ex: 4">
+    </div>
+
+    @* Amount of free time *@
+    <div class="form-group">
+      <label for="amountOfFreeTime">How much free time can you provide to a guest?</label>
+      <input type="number" class="form-control" id="amountOfFreeTime" placeholder="Ex: 4">
+    </div>
+
+    @* Amount of additional time *@
+    <div class="form-group">
+      <label for="amountOfAdditionalTime">How much additional time would you allow if the guest could pay?</label>
+      <input type="number" class="form-control" id="amountOfAdditionalTime" placeholder="Ex: 4">
+    </div>
+
+    @* Interested in incentives *@
+    <div class="form-check">
+      <label>
+        Are you interesed in learning more about financial incentives for opening your home to evacuees?
+      </label>
+      <input class="form-check-input" type="radio" name="isInsentivised" id="isInsentivised" value="is insentivised" checked>
+      <label class="form-check-label" for="isDetatched">
+        Yes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="isInsentivised" id="notInsentivised" value="is not insentivised">
+      <label class="form-check-label" for="notInsentivised">
+        No
+      </label>
+    </div>
+
+
+
+
+
 
 
 
