@@ -1,189 +1,201 @@
 @page "/map"
+@using FireRefuge.Shared
 
 <div class="d-flex">
-  <form class="side-form bg-light p-4">
-    @* First Name *@
-    <div class="form-group">
-      <label for="firstName">First Name:</label>
-      <input type="text" class="form-control" id="firstName" placeholder="Please enter your first name">
-    </div>
-    
-    @* Last Name *@
-    <div class="form-group">
-      <label for="lastName">Last Name:</label>
-      <input type="text" class="form-control" id="lastName" placeholder="Please enter your last name">
-    </div>
+    <EditForm Model="@guest" class="side-form bg-light p-4" OnValidSubmit=@ValidFormSubmitted OnInvalidSubmit=@InvalidFormSubmitted >
 
-    @* Phone Number *@
-    <div class="form-group">
-      <label for="phone">Phone Number:</label>
-      <input type="text" class="form-control" id="phone" placeholder=" Ex: 555-555-5555">
+        @* Name *@
+        <div class="form-group">
+            <label for="lastName">Name:</label>
+            <InputText class="form-control" id="lastName" @bind-Value=guest.Name placeholder="Please enter your name" />
+        </div>
+
+        @* Phone Number *@
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" placeholder=" Ex: 555-555-5555">
+        </div>
+
+        @* Email *@
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ex: example@example.com">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        @* Address *@
+        <div class="form-group">
+            <label for="address">Physical Address:</label>
+            <input type="text" class="form-control" id="address" placeholder="Ex: 3rd Avenue, Eugene, OR, 97401">
+            <small id="addressHelp" aria-describedby="addressHelp" class="form-text text-muted">If you a looking for housing, please enter the address that was impacted by the wildfires.</small>
+        </div>
+
+        @* Rent / Own *@
+        <div class="my-4">
+            <p>
+                Do you rent or own?
+            </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
+                <label class="form-check-label" for="ownHome">
+                    I own my home
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="rentOrOwn" id="rentHome" value="I rent my home">
+                <label class="form-check-label" for="rentHome">
+                    I rent my home
+                </label>
+            </div>
+        </div>
+
+
+        <div class="mb-4">
+            @* Need housing / Have a place for guests *@
+            <p>
+                Plese tell us if you <b>need</b> housing, or if you <b>have</b> a place for guests
+            </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
+                <label class="form-check-label" for="needHelp">
+                    I need houding
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
+                <label class="form-check-label" for="haveHousing">
+                    I have a place for guests
+                </label>
+            </div>
+        </div>
+
+        @* Housing type *@
+        <div class="form-group">
+            <label for="housingType">What type of housing?</label>
+            <select class="form-control" id="housingType">
+                <option>Apartment</option>
+                <option>House</option>
+                <option>Condo</option>
+                <option>Accessory Dwelling Unit</option>
+                <option>RV</option>
+                <option>Mobile Home</option>
+            </select>
+        </div>
+
+        @* Number of rooms *@
+        <div class="form-group">
+            <label for="numberOfRooms">Please enter number of available rooms</label>
+            <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
+        </div>
+
+        <div class="my-4">
+            @* Detatched space *@
+            <p>
+                Please indicate whether the space is detached from the home
+            </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="isDetatched" id="isDetatched" value="is detatched" checked>
+                <label class="form-check-label" for="isDetatched">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="isDetatched" id="notDetatched" value="is not detatched">
+                <label class="form-check-label" for="notDetatched">
+                    No
+                </label>
+            </div>
+        </div>
+
+        @* Number of adults *@
+        <div class="form-group">
+            <label for="numberOfAdults">Please enter number of adults accepted</label>
+            <input type="number" class="form-control" id="numberOfAdults" placeholder="Ex: 2">
+        </div>
+
+        @* Number of children *@
+        <div class="form-group">
+            <label for="numberOfChildren">Please enter number of children accepted</label>
+            <input type="number" class="form-control" id="numberOfChildren" placeholder="Ex: 3">
+        </div>
+
+        @* Number of pets *@
+        <div class="form-group">
+            <label for="numberOfPets">Please enter number of pets accepted</label>
+            <input type="number" class="form-control" id="numberOfPets" placeholder="Ex: 2">
+        </div>
+
+        @* Number of dogs *@
+        <div class="form-group">
+            <label for="numberOfDogs">Please enter number of dogs accepted</label>
+            <input type="number" class="form-control" id="numberOfDogs" placeholder="Ex: 2">
+        </div>
+
+        @* Number of cats *@
+        <div class="form-group">
+            <label for="numberOfCats">Please enter number of cats accepted</label>
+            <input type="number" class="form-control" id="numberOfCats" placeholder="Ex: 2">
+        </div>
+
+        @* Number of other pets *@
+        <div class="form-group">
+            <label for="numberOfOtherPets">Please enter number of other pets accepted</label>
+            <input type="number" class="form-control" id="numberOfOtherPets" placeholder="Ex: 4">
+        </div>
+
+        @* Amount of free time *@
+        <div class="form-group">
+            <label for="amountOfFreeTime">How much free time can you provide to a guest?</label>
+            <input type="number" class="form-control" id="amountOfFreeTime" placeholder="Ex: 4">
+        </div>
+
+        @* Amount of additional time *@
+        <div class="form-group">
+            <label for="amountOfAdditionalTime">How much additional time would you allow if the guest could pay?</label>
+            <input type="number" class="form-control" id="amountOfAdditionalTime" placeholder="Ex: 4">
+        </div>
+
+        <div class="my-4">
+            @* Interested in incentives *@
+            <p>
+                Are you interesed in learning more about financial incentives for opening your home to evacuees?
+            </p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="isInsentivised" id="isInsentivised" value="is insentivised" checked>
+                <label class="form-check-label" for="isDetatched">
+                    Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="isInsentivised" id="notInsentivised" value="is not insentivised">
+                <label class="form-check-label" for="notInsentivised">
+                    No
+                </label>
+            </div>
+        </div>
+        @* Submit *@
+        <input type="submit" class="btn btn-block btn-primary mb-4" value="Save" />
+
+    </EditForm>
+   
+
+    @* MAP SIDE *@
+    <div class="main-map d-flex justify-content-center align-items-center">
+        <iframe class="sticky" width='100%' height='800px' src='https://uo-online.maps.arcgis.com/apps/View/index.html?appid=4fc8ab229fe249d3a169c70793d86258&fbclid=IwAR27mpKRbJVmg11JDYzkS5ozNgt3snGbJvhejgzZtBLv65o-g3bWUl2st4M&extent=-123.2204,43.9826,-122.8908,44.0983' frameborder='0' scrolling='no'></iframe>
     </div>
-
-    @* Email *@
-    <div class="form-group">
-      <label for="email">Email Address:</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ex: example@example.com">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
-
-    @* Address *@
-    <div class="form-group">
-      <label for="address">Physical Address:</label>
-      <input type="text" class="form-control" id="address" placeholder="Ex: 3rd Avenue, Eugene, OR, 97401">
-      <small id="addressHelp"  aria-describedby="addressHelp" class="form-text text-muted">If you a looking for housing, please enter the address that was impacted by the wildfires.</small>
-    </div>
-
-    @* Rent / Own *@
-    <div class="my-4">
-      <p>
-        Do you rent or own?
-      </p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="rentOrOwn" id="ownHome" value="I own my home" checked>
-        <label class="form-check-label" for="ownHome">
-          I own my home
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="rentOrOwn" id="rentHome" value="I rent my home">
-        <label class="form-check-label" for="rentHome">
-          I rent my home
-        </label>
-      </div>
-    </div>
-    
-
-    <div class="mb-4">
-      @* Need housing / Have a place for guests *@
-      <p>
-        Plese tell us if you <b>need</b> housing, or if you <b>have</b> a place for guests
-      </p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="helpOrHousing" id="needHelp" value="In need of help" checked>
-        <label class="form-check-label" for="needHelp">
-          I need houding
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="helpOrHousing" id="haveHousing" value="I have a place for guests">
-        <label class="form-check-label" for="haveHousing">
-          I have a place for guests
-        </label>
-      </div>
-    </div>
-
-    @* Housing type *@
-    <div class="form-group">
-      <label for="housingType">What type of housing?</label>
-      <select class="form-control" id="housingType">
-        <option>Apartment</option>
-        <option>House</option>
-        <option>Condo</option>
-        <option>Accessory Dwelling Unit</option>
-        <option>RV</option>
-        <option>Mobile Home</option>
-      </select>
-    </div>
-
-    @* Number of rooms *@
-    <div class="form-group">
-      <label for="numberOfRooms">Please enter number of available rooms</label>
-      <input type="number" class="form-control" id="numberOfRooms" placeholder="Ex: 3">
-    </div>
-
-    <div class="my-4">
-      @* Detatched space *@
-      <p>
-        Please indicate whether the space is detached from the home
-      </p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="isDetatched" id="isDetatched" value="is detatched" checked>
-        <label class="form-check-label" for="isDetatched">
-          Yes
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="isDetatched" id="notDetatched" value="is not detatched">
-        <label class="form-check-label" for="notDetatched">
-          No
-        </label>
-      </div>
-    </div>
-
-    @* Number of adults *@
-    <div class="form-group">
-      <label for="numberOfAdults">Please enter number of adults accepted</label>
-      <input type="number" class="form-control" id="numberOfAdults" placeholder="Ex: 2">
-    </div>
-
-    @* Number of children *@
-    <div class="form-group">
-      <label for="numberOfChildren">Please enter number of children accepted</label>
-      <input type="number" class="form-control" id="numberOfChildren" placeholder="Ex: 3">
-    </div>
-
-    @* Number of pets *@
-    <div class="form-group">
-      <label for="numberOfPets">Please enter number of pets accepted</label>
-      <input type="number" class="form-control" id="numberOfPets" placeholder="Ex: 2">
-    </div>
-
-    @* Number of dogs *@
-    <div class="form-group">
-      <label for="numberOfDogs">Please enter number of dogs accepted</label>
-      <input type="number" class="form-control" id="numberOfDogs" placeholder="Ex: 2">
-    </div>
-
-    @* Number of cats *@
-    <div class="form-group">
-      <label for="numberOfCats">Please enter number of cats accepted</label>
-      <input type="number" class="form-control" id="numberOfCats" placeholder="Ex: 2">
-    </div>
-
-    @* Number of other pets *@
-    <div class="form-group">
-      <label for="numberOfOtherPets">Please enter number of other pets accepted</label>
-      <input type="number" class="form-control" id="numberOfOtherPets" placeholder="Ex: 4">
-    </div>
-
-    @* Amount of free time *@
-    <div class="form-group">
-      <label for="amountOfFreeTime">How much free time can you provide to a guest?</label>
-      <input type="number" class="form-control" id="amountOfFreeTime" placeholder="Ex: 4">
-    </div>
-
-    @* Amount of additional time *@
-    <div class="form-group">
-      <label for="amountOfAdditionalTime">How much additional time would you allow if the guest could pay?</label>
-      <input type="number" class="form-control" id="amountOfAdditionalTime" placeholder="Ex: 4">
-    </div>
-
-    <div class="my-4">
-      @* Interested in incentives *@
-      <p>
-        Are you interesed in learning more about financial incentives for opening your home to evacuees?
-      </p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="isInsentivised" id="isInsentivised" value="is insentivised" checked>
-        <label class="form-check-label" for="isDetatched">
-          Yes
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="isInsentivised" id="notInsentivised" value="is not insentivised">
-        <label class="form-check-label" for="notInsentivised">
-          No
-        </label>
-      </div>
-    </div>
-
-    @* Submit *@
-    <button type="submit" class="btn btn-block btn-primary mb-4">Submit</button>
-  </form>
-
-  @* MAP SIDE *@
-  <div class="main-map d-flex justify-content-center align-items-center">
-    <iframe class="sticky" width='100%' height='800px' src='https://uo-online.maps.arcgis.com/apps/View/index.html?appid=4fc8ab229fe249d3a169c70793d86258&fbclid=IwAR27mpKRbJVmg11JDYzkS5ozNgt3snGbJvhejgzZtBLv65o-g3bWUl2st4M&extent=-123.2204,43.9826,-122.8908,44.0983' frameborder='0' scrolling='no'></iframe>
-  </div>
 </div>
+
+@code{
+
+    private Guest guest = new Guest();
+
+    void ValidFormSubmitted(EditContext editContext)
+    {
+        var name = guest.Name;
+    }
+
+    void InvalidFormSubmitted(EditContext editContext)
+    {
+        var name = guest.Name;
+    }
+}
