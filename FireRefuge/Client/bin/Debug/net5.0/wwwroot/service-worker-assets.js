@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-6b4o4PFlC3mHR3dRq0nsvmJHcrWlMEDe2F4Vx8lEzgw=",
+      "hash": "sha256-ZYkKCfxYbJjx3yQ7nVe+O0OJwd45E\/h6EqmRabtxNdk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -91,6 +91,10 @@
     {
       "hash": "sha256-5AkXTXHIeXryrSr97JWjBrndsRjoslMVJ8e7FqupHUw=",
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll"
+    },
+    {
+      "hash": "sha256-08FEQ2duf1ReN5EG4rQ+F9N6aDM1v16sYSDhUSOLyjk=",
+      "url": "_framework\/RepoDb.dll"
     },
     {
       "hash": "sha256-qj+ITVhmJUAkSBctDayU4uUjNTKdXqAbF2zAxo7\/mkM=",
@@ -785,19 +789,19 @@
       "url": "_framework\/dotnet.5.0.1.js"
     },
     {
-      "hash": "sha256-TZWzFczv+XnUElqEJucpwjFvD9YUjB\/346ZS3pZBfk4=",
+      "hash": "sha256-rhFWxwW2uAj6yETSgKh90akpbAZoBKP8a\/PwT7M5lKo=",
       "url": "_framework\/FireRefuge.Shared.dll"
     },
     {
-      "hash": "sha256-0KDzodObVZf+FduYy\/Ot+RZZkiVAvPDI9CggEOnLzus=",
+      "hash": "sha256-KUBIMC7indWPs1bTw3OYVMxh8UkI2qogfvQ1jaaezug=",
       "url": "_framework\/FireRefuge.Shared.pdb"
     },
     {
-      "hash": "sha256-XJKzdm9WZpqMffaehJ0tZytiNb9Y\/QJ8ejzx1zUBvNI=",
+      "hash": "sha256-+Siu3\/xck5CGzvX29wSksvh59X4saNzoUSRyS4nJisM=",
       "url": "_framework\/FireRefuge.Client.dll"
     },
     {
-      "hash": "sha256-uPEi\/8fGsVcNGKhaxSS1CniUp982bnffdmJulg8b9V8=",
+      "hash": "sha256-whutT9Vm0+JkQvnRFWHubywQ8HyNsWFU4W1gxdx3+iI=",
       "url": "_framework\/FireRefuge.Client.pdb"
     },
     {
@@ -891,6 +895,10 @@
     {
       "hash": "sha256-8G\/jn\/ufK\/piQoHjqKnb78eChfXBCuo9gBD+kX6nOd8=",
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.dll.gz"
+    },
+    {
+      "hash": "sha256-W4wzQp9O9RUbwAxj88\/dC3WyDKSGI7E2\/WvSVXRK1h8=",
+      "url": "_framework\/RepoDb.dll.gz"
     },
     {
       "hash": "sha256-Ii6MJmy1MbrayHeF0iX4rxHolmHFCB+eTyIjJXl1\/4I=",
@@ -1585,7 +1593,7 @@
       "url": "_framework\/dotnet.5.0.1.js.gz"
     },
     {
-      "hash": "sha256-\/yoQF+wx\/lcufQjg\/EfMSORxPFJxvPYE2KzTci7UcKs=",
+      "hash": "sha256-rIf1FWiqxa0G9PBVl5jI\/IR0NCwpqCFFjDW3b+RsQhw=",
       "url": "_framework\/FireRefuge.Shared.dll.gz"
     },
     {
@@ -1717,5 +1725,5 @@
       "url": "FireRefuge.Client.bundle.scp.css"
     }
   ],
-  "version": "zvnV\/kYL"
+  "version": "pxKXEzyc"
 };
