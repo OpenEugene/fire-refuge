@@ -1,7 +1,16 @@
 .side-form {
-  width: 30%;
+  // width: 30%;
+  width: 40%;
 }
 
 .main-map {
-  width: 70%;
+  // width: 70%;
+  width: 55%;
+  margin-left: auto;
+
+}
+
+.sticky {
+  position: sticky;
+  top: 95px;
 }
