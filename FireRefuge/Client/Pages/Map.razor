@@ -1,8 +1,9 @@
 @page "/map"
 @using FireRefuge.Shared
+@inject HttpClient Http
 
 <div class="d-flex">
-    <EditForm Model="@guest" class="side-form bg-light p-4" OnValidSubmit=@ValidFormSubmitted OnInvalidSubmit=@InvalidFormSubmitted >
+    <EditForm Model="@guest" class="side-form bg-light p-4" OnValidSubmit=@ValidFormSubmitted OnInvalidSubmit=@InvalidFormSubmitted>
 
         @* Name *@
         <div class="form-group">
@@ -177,7 +178,7 @@
         <input type="submit" class="btn btn-block btn-primary mb-4" value="Save" />
 
     </EditForm>
-   
+
 
     @* MAP SIDE *@
     <div class="main-map d-flex justify-content-center align-items-center">
@@ -192,7 +193,9 @@
     void ValidFormSubmitted(EditContext editContext)
     {
         var name = guest.Name;
+        Http.PostAsJsonAsync<Guest>("Guest",guest);
     }
+    
 
     void InvalidFormSubmitted(EditContext editContext)
     {

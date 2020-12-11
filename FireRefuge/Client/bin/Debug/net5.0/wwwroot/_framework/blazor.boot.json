@@ -196,12 +196,12 @@
       "netstandard.dll": "sha256-2ba2qAAtNUX9Qh5PFXhTMtcD\/Nra\/wyG197\/wrnxElI=",
       "System.Private.CoreLib.dll": "sha256-4wsl1v32v74UB0CTQ6+AdUTdM+9C1VraomgeCjb4Wug=",
       "FireRefuge.Shared.dll": "sha256-TZWzFczv+XnUElqEJucpwjFvD9YUjB\/346ZS3pZBfk4=",
-      "FireRefuge.Client.dll": "sha256-M1oznQuu96oaBCmUHp9rXrWufYnswIMh\/idRu8RGnSQ="
+      "FireRefuge.Client.dll": "sha256-XJKzdm9WZpqMffaehJ0tZytiNb9Y\/QJ8ejzx1zUBvNI="
     },
     "lazyAssembly": null,
     "pdb": {
       "FireRefuge.Shared.pdb": "sha256-0KDzodObVZf+FduYy\/Ot+RZZkiVAvPDI9CggEOnLzus=",
-      "FireRefuge.Client.pdb": "sha256-nhVAv0IPA1Od58HBjPjb3RFJI0MFI+0beGsCm0FSDbs="
+      "FireRefuge.Client.pdb": "sha256-uPEi\/8fGsVcNGKhaxSS1CniUp982bnffdmJulg8b9V8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-nXByiCO4+RYyh+A88TSSZDwAJMF7M7Up\/h6dfAA19C8=",
