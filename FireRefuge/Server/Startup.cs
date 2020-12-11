@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
+using RepoDb;
 
 namespace FireRefuge.Server
 {
@@ -45,6 +46,8 @@ namespace FireRefuge.Server
             app.UseHttpsRedirection();
             app.UseBlazorFrameworkFiles();
             app.UseStaticFiles();
+
+            PostgreSqlBootstrap.Initialize();
 
             app.UseRouting();
 
