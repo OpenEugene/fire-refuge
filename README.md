@@ -12,9 +12,9 @@ Our technology stack from back to front is Docker, Postgres, Asp.Net, Blazor. Th
 
 1. Install [Visual Studio](https://visualstudio.microsoft.com/vs/)
 2. Install [Postgres](https://www.postgresql.org/download/)
-  - remember the admin username and password
+    - remember the admin username and password
 3. Optionally install a database tools like [DBeaver](https://dbeaver.io/) and [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/quickstart-postgres)
-  - create a local database, name it FireRefuge
+    - create a local database, name it FireRefuge
 3. Create local tables using the scripts in [/sql](https://github.com/OpenEugene/fire-refuge/tree/master/FireRefuge/Server/SQL)
 4. Change the connection string to match you username and password
 5. Run the app!
