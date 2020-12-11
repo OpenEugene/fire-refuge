@@ -16,8 +16,10 @@ Our technology stack from back to front is Docker, Postgres, Asp.Net, Blazor. Th
 3. Optionally install a database tools like [DBeaver](https://dbeaver.io/) and [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/quickstart-postgres)
     - create a local database, name it FireRefuge
 3. Create local tables using the scripts in [/sql](https://github.com/OpenEugene/fire-refuge/tree/master/FireRefuge/Server/SQL)
-4. Change the connection string to match you username and password
+4. Change the connection string to match your username and password
 5. Run the app!
+
+Note on code quality and best practices.  This is a volunteer effort with a "keep it simple" mentality.  You will see shortcuts in the code and patterns missing.  That's OK, and you can chat it out with teh contributors in [discussions](https://github.com/OpenEugene/fire-refuge/discussions)
 
 
 
